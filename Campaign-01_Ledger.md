@@ -5,20 +5,22 @@
 
 | Prospect | Title | Company | Email | Status | Day-0 threadId |
 |----------|-------|---------|-------|--------|----------------|
-| Pallavi Agarwal | VP Engineering | Nextdoor | pallaviagarwal@nextdoor.com | sent_1 | e98e51aa-4678-4ac9-9dfa-4d8aa463399c |
-| Vandana Mohan | Head of Data | Nextdoor | vmohan@nextdoor.com | sent_1 | d1f88999-3b46-4d33-8c68-a6d9c4b8d8bb |
-| Chris Patalano | CTO | Thumbtack | cpatalano@thumbtack.com | sent_1 | f9cbb5ee-a590-4e57-a5e0-ee69c932ae0e |
-| Luke Phan | Head of Data Engineering | Gusto | luke.phan@gusto.com | sent_1 | 64a0680a-b3b0-4769-8b02-119fe01e4793 |
-| Chris Ferguson | Head of Data Platform | Gusto | chris.ferguson@gusto.com | sent_1 | dd512840-e503-4acc-907e-033041bf210a |
-| Gene Drabkin | VP Engineering | Gusto | gene.drabkin@gusto.com | sent_1 | eaa96530-7f42-45b0-b17b-0a3dd4a26941 |
-| Bharathy S. | VP Data Engineering | Chime | bs@chime.com | sent_1 | 5a0b6075-a896-4de7-be68-390d9b210afb |
+| Pallavi Agarwal | VP Engineering | Nextdoor | pallaviagarwal@nextdoor.com | sent_2 | e98e51aa-4678-4ac9-9dfa-4d8aa463399c |
+| Vandana Mohan | Head of Data | Nextdoor | vmohan@nextdoor.com | sent_2 | d1f88999-3b46-4d33-8c68-a6d9c4b8d8bb |
+| Chris Patalano | CTO | Thumbtack | cpatalano@thumbtack.com | sent_2 | f9cbb5ee-a590-4e57-a5e0-ee69c932ae0e |
+| Luke Phan | Head of Data Engineering | Gusto | luke.phan@gusto.com | sent_2 | 64a0680a-b3b0-4769-8b02-119fe01e4793 |
+| Chris Ferguson | Head of Data Platform | Gusto | chris.ferguson@gusto.com | sent_2 | dd512840-e503-4acc-907e-033041bf210a |
+| Gene Drabkin | VP Engineering | Gusto | gene.drabkin@gusto.com | sent_2 | eaa96530-7f42-45b0-b17b-0a3dd4a26941 |
+| Bharathy S. | VP Data Engineering | Chime | bs@chime.com | sent_2 | 5a0b6075-a896-4de7-be68-390d9b210afb |
 | Amit Kumar | Director Data Engineering | Chime | amit.kumar@chime.com | sent_1 | 1d66b024-741c-414b-a8c4-488ff3e35bad |
-| Nirmal Selvaraj | VP Engineering, Growth | Chime | nirmal.selvaraj@chime.com | sent_1 | 8fc9e617-9dd3-4923-9a2f-04013a526d30 |
-| Jeff Currier | CTO | Chime | jcurrier@chime.com | sent_1 | 931699c3-c261-4db7-b414-6d548f5ef398 |
-| Anil Puli | Head of BI / Data Eng | Chime | anil.puli@chime.com | sent_1 | 4856ee9c-4e7c-4cb1-8f51-74d69fe34faa |
+| Nirmal Selvaraj | VP Engineering, Growth | Chime | nirmal.selvaraj@chime.com | sent_2 | 8fc9e617-9dd3-4923-9a2f-04013a526d30 |
+| Jeff Currier | CTO | Chime | jcurrier@chime.com | sent_2 | 931699c3-c261-4db7-b414-6d548f5ef398 |
+| Anil Puli | Head of BI / Data Eng | Chime | anil.puli@chime.com | sent_2 | 4856ee9c-4e7c-4cb1-8f51-74d69fe34faa |
 | Juan J. Aguirre | Staff Data Eng Manager | Gusto | juan.aguirre@gusto.com | sent_1 | 1f3d172e-d9a5-4bbb-b98a-ab39966f76a8 |
 
 **Reply sweep 2026-07-03:** 1 auto-reply only — Amit Kumar (Chime) Out-of-Office. Not a human reply → sequence continues, no lead, no suppression. 0 genuine replies, 0 opt-outs, 0 leads.
+
+**Follow-up (Email 2) sent 2026-07-08 — WITH CORRECTION:** the automated 07-08 run drafted the 10 follow-ups correctly but mis-addressed them all to `sandeep@` (reply-to-self bug) — prospects did NOT receive them. They were re-sent the same day (~14:00 UTC) to the correct prospects, threaded onto Day-0, with `To:` verified = prospect. The 10 are now **sent_2**; next step is Day-7 (Email 3, breakup). Amit Kumar (OOO) and Juan J. Aguirre (email unresolved) were NOT in this batch and remain sent_1. Root-cause bug fixed in the skill (explicit `To:` + post-send check). Laptop `gtm-daily-maintenance` engine stopped; migrating to a cloud routine (`Firebolt GTM Daily`, 8 AM PT). Updates now post to Slack #sandeep-claude-outbound-campaign.
 
 ## Rules for the daily maintenance task
 - **Reply → stop sequence** (cancel Day-3/Day-7), create Salesforce lead, surface to Sandeep.
